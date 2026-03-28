@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOX Living – Smart Home Shop</title>
+    <meta
+      name="description"
+      content="Premium Smart-Home-Produkte mit warmem Licht-Design, Bundle-Angeboten und schneller Checkout-Option."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#" class="logo" aria-label="NOX Living Startseite">NOX <span>LIVING</span></a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#bundle">Bundles</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </nav>
+        <button class="icon-btn" aria-label="Warenkorb öffnen">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Your Home. Reimagined.</h1>
+          <p>Transform your space with smart lighting and automation.</p>
+          <a class="cta" href="#products">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container cards" id="product-grid"></div>
+      </section>
+
+      <section class="comparison">
+        <div class="container">
+          <div class="comparison-headings">
+            <h2>Before &amp; After...</h2>
+            <h2>Zu atemberaubend.</h2>
+          </div>
+          <div class="before-after" aria-label="Vorher-Nachher-Vergleich">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1300&q=80" alt="Wohnzimmer mit schwacher Beleuchtung" />
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1300&q=80" alt="Wohnzimmer mit moderner smarter Beleuchtung" />
+          </div>
+        </div>
+      </section>
+
+      <section class="bundle" id="bundle">
+        <div class="container bundle-grid">
+          <article class="bundle-info">
+            <h2>NOX Atmosphere Kit</h2>
+            <p>Alles für ihr Smart Home.</p>
+            <p>Perfektes Bundle für beeindruckende Atmosphäre zu Hause.</p>
+            <button class="cta" id="bundle-btn">Jetzt Bundle sichern</button>
+          </article>
+          <aside class="order-summary" aria-live="polite">
+            <h3>Order Summary <small>Only 12 left in stock!</small></h3>
+            <ul id="summary-list"></ul>
+            <div class="total-row">
+              <span>Total:</span>
+              <strong id="summary-total">0,00€</strong>
+            </div>
+            <button class="pay-btn">Pay Now</button>
+            <p class="benefits">❤ Secure Payment &nbsp; ✓ Free Shipping</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="reviews" id="support">
+        <div class="container">
+          <h2>Trusted by Thousands</h2>
+          <div class="review-grid">
+            <blockquote>★★★★★ „Unser Wohnzimmer sieht jetzt aus wie im Kino. Absolut begeistert!“</blockquote>
+            <blockquote>★★★★★ „Einfache Installation und super Atmosphäre – 10/10!“</blockquote>
+            <blockquote>★★★★★ „Smart Home auf einem neuen Level. Genau was wir wollten!“</blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
